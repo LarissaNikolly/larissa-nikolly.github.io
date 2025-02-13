@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <title>Document</title>
+</head>
+  <style>
+    /* Estilo para os links */
+    a {
+        text-decoration: none;
+        color: #4b0082; /* Roxo */
+        font-size: 1.2em;
+        padding: 10px;
+        background-color: #eecee8; /* Rosa bebê */
+        border-radius: 5px;
+        margin: 10px;
+        transition: background-color 0.3s;
+    }
+
+    /* Efeito de hover para os links */
+    a:hover {
+        background-color: #e0a0b8; /* Tom um pouco mais escuro de rosa */
+    }
+  </style>
+<body>
+  
+
+  
+  <center><h1>🔎 Descubra sua Classificação de Peso 🔎</h1></center>
+  <center><h3>Bem vindo(a)! Esta é a calculadora de IMC💪</h3></center>
+  <hr>
+  <form id="pesoForm">
+    <center><label for="peso"><h3>Digite seu peso (em kg):</label><br><br>
+    <input type="number" id="peso" name="peso" required placeholder="Digite seu peso" min="1"><br><br>
+    <button type="button" onclick="classificarPeso()">Classificar</h3></button></center>
+  </form>
+ <center><h3>
+  <p id="resultado"></p></h3>
+   </center>
+  <script src="js/scriptimc1.js"></script>
+  <script src="js/scriptimc2.js"></script>
+   <center><a href="Portfólio.html"><h2>Voltar</h2></a></center>
+</body>
+</html>

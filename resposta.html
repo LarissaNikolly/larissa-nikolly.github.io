@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Contato - Resposta</title>
+    <link href="css/resposta.css" rel="stylesheet" type="text/css" />
+</head>
+<style>
+     a {
+              text-decoration: none;
+              color: #4b0082; /* Roxo */
+              font-size: 1.2em;
+              padding: 10px;
+             
+              border-radius: 5px;
+              margin: 10px;
+           
+          }
+
+          /* Efeito de hover para os links */
+          a:hover {
+              background-color: #e0a0b8; /* Tom um pouco mais escuro de rosa */
+          }
+    /* Define as propriedades básicas do corpo da página */
+body {
+    display: flex; /* Define o layout como flexbox */
+    flex-direction: column; /* Orienta os itens em uma coluna */
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    height: 100vh; /* Altura da viewport */
+    background-color: #eecee8; /* Cor de fundo da página */
+    margin: 0; /* Remove margem padrão */
+    color:  #4b0082; /* Cor do texto */
+    padding: 0; /* Remove padding padrão */
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Estilo do cabeçalho */
+header {
+    width: 100%; /* Largura total */
+    display: flex; /* Define o layout como flexbox */
+    flex-direction: column; /* Orienta os itens em uma coluna */
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    padding: 20px; /* Padding interno */
+    color: #eb18a5; /* Cor roxa para o texto do cabeçalho */
+}
+
+/* Estilo do título do cabeçalho */
+header h1 {
+    margin: 0; /* Remove margem padrão */
+    margin-bottom: 10px; /* Espaço entre o título e os links de navegação */
+}
+
+
+/* Estilo do contêiner de resposta */
+.response-container {
+    display: flex; /* Define o layout como flexbox */
+    flex-direction: column; /* Orienta os itens em uma coluna */
+    align-items: center; /* Centraliza horizontalmente */
+    border: 1px solid #ccc; /* Borda cinza clara */
+    border-radius: 10px; /* Bordas arredondadas */
+    padding: 20px; /* Padding interno */
+    background-color: white; /* Cor de fundo branca */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ao redor do contêiner */
+    width: 300px; /* Largura fixa */
+    margin-top: 20px; /* Espaço superior */
+}
+
+/* Estilo dos parágrafos dentro do contêiner de resposta */
+.response-container p {
+    margin: 10px 0; /* Margem vertical */
+}
+</style>
+
+<body>
+    <header>
+        
+    </header>
+    <hr />
+    <div class="response-container">
+        <h2>Parabéns, seu formulário foi enviado com sucesso!</h2>
+        <h3>Informações Coletadas:</h3>
+        <p><strong>Nome:</strong> <span id="response-name"></span></p>
+        <p><strong>E-mail:</strong> <span id="response-email"></span></p>
+        <p><strong>Whatsapp:</strong> <span id="response-whatsapp"></span></p>
+        <p><strong>Mensagem:</strong> <span id="response-message"></span></p>
+        <div class="social-links">
+            
+        </div>
+    </div>
+    <script>
+        // Obtém os parâmetros da URL.
+        const urlParams = new URLSearchParams(window.location.search);
+        // Define os valores nos elementos HTML correspondentes.
+        document.getElementById('response-name').innerText = urlParams.get('name');
+        document.getElementById('response-email').innerText = urlParams.get('email');
+        document.getElementById('response-whatsapp').innerText = urlParams.get('whatsapp');
+        document.getElementById('response-message').innerText = urlParams.get('message');
+    </script>
+    <center><a href="index.html"><h2>Voltar</h2></a></center>
+</body>
+
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Contato</title>
+    <link href="css/contato.css" rel="stylesheet" type="text/css" />
+</head>
+<style>
+     a {
+              text-decoration: none;
+              color: #4b0082; /* Roxo */
+              font-size: 1.2em;
+              padding: 10px;
+             
+              border-radius: 5px;
+              margin: 10px;
+           
+          }
+
+          /* Efeito de hover para os links */
+          a:hover {
+              background-color: #e0a0b8; /* Tom um pouco mais escuro de rosa */
+          }
+    body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #eecee8;
+    margin: 0;
+    color: #4b0082;
+    padding: 0;
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Estilo do cabeçalho */
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: #4b0082; /* Roxo para o texto do cabeçalho */
+}
+
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin-top: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input, textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #eb18a5;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color:#eb18a5;
+}
+</style>
+
+<body>
+    <header>
+       <h1>Contato</h1>
+        
+    </header>
+    <hr />
+    <div class="form-container">
+        <form id="contactForm">
+            <h2>Entre em Contato</h2>
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="whatsapp">Whatsapp:</label>
+            <input type="tel" id="whatsapp" name="whatsapp" required>
+            
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+           <a href="resposta.html"><button type="submit">Enviar</button></a> 
+        </form>
+        <div class="social-links">
+            
+        </div>
+    </div>
+    <script src="js/scriptcontato.js"></script>
+    <center><a href="index.html"><h2>Voltar</h2></a></center>
+</body>
+</html>
